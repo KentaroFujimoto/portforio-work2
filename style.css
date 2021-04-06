@@ -1,0 +1,258 @@
+/* 共通 */
+body {
+    font-family: "ヒラギノ丸ゴ ProN","Hiragino Maru Gothic ProN";
+    background: #fff0e8;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.title {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+    background-color: #043c78;
+}
+
+.title h2 {
+    margin: 0px;
+    font-weight: normal;
+}
+
+.p-comment {
+    word-break: break-all;
+}
+
+/* top */
+.top {
+    margin-bottom: 50px;
+}
+
+.back-image {
+    position: relative;
+    background-image: url(./images/profile_site_image.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+h1 {
+    color: #EEE;
+    text-shadow: 2px 2px 5px #444;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.apeal div {
+    width: 80%;
+}
+
+.download {
+    display: flex;
+}
+
+.download div {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-left: 30px;
+}
+
+h3 {
+    font-weight: normal;
+}
+
+.btn {
+    display: block;
+    padding: 2px 100px;
+    color: white;
+    font-size: large;
+    border: 3px solid #043c78;
+    background-color: #4169E1;
+    text-decoration: none;
+}
+
+/* main1 */
+.main1 {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.items1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.item1 {
+    flex: auto;
+    width: 25%;
+    margin-top: 20px;
+}
+
+.item1 h3 {
+    display: inline-block;
+    width: 80%;
+}
+
+.item1 img {
+    width: 80%;
+}
+
+/* main2 */
+.main2 {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.item2 {
+    display: flex;
+    margin-top: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.item2 img {
+    width: 280px;
+}
+
+.comment p{
+    display: inline-block;
+    margin-top: 10%;
+    margin-left: 10%;
+    text-align: left;
+}
+
+/* footer */
+footer {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    color: white;
+    background: #043c78;
+}
+
+
+/* レスポンシブ タブレット */
+@media (max-width: 1024px) {
+    /* 共通 */
+    .container {
+        width: 95%;
+    }
+
+    /* main1 */
+    .back-image {
+        height: 250px;
+    }
+
+    h1 {
+        top: 15%;
+        left: 5%;
+        font-size: 30px;
+    }
+
+    .item1 {
+        width: 50%;
+    }
+
+    /* main2 */
+    .item2 img {
+        width: 350px;
+    }
+
+    .comment {
+        text-align: center;
+    }
+
+    .comment p {
+        width: 80%;
+        margin-top: 80px;
+        margin-right: 50px;
+    }
+}
+
+/* レスポンシブ スマホ */
+@media (max-width: 670px) {
+    /* 共通 */
+    h1 {
+        font-size: 15px !important;
+        top: 20%;
+        left: 5%;
+    }
+
+    h3 {
+        font-size: 12px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    a {
+        font-size: 10px !important;
+    }
+
+    .title h2{
+        font-size: 15px;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    /* top */
+    .top {
+        margin-bottom: 20px;
+    }
+
+    .back-image {
+        height: 160px;
+    }
+
+    .back-image h1 {
+        text-align: center;
+        width: 80%;
+        font-size: 20px;
+    }
+
+    .p-comment {
+        margin-bottom: 0px;
+    }
+
+    .btn {
+        padding: 2px 30px;
+    }
+
+    /* main1 */
+    .item1 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* main2 */
+    .item2 {
+        flex-direction: column;
+    }
+
+    .item2 img {
+        width: 100%;
+    }
+
+    .comment div{
+        padding-left: auto;
+        padding-right: auto;
+    }
+
+    .comment p {
+        display: block;
+        width: 60%;
+        text-align: center;
+        margin: 20px auto 40px;
+    }
+}
